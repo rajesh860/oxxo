@@ -1,0 +1,12 @@
+.sider-bar {
+  background-color: #222d32 !important;
+  flex: none !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+  height: calc(100vh - 64px);
+  overflow: scroll;
+}
+.content-layout {
+  width: 100%;
+  height: calc(100vh - 64px);
+}
