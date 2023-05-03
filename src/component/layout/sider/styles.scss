@@ -3,7 +3,25 @@
     color: white;
     text-transform: uppercase;
     padding-top: 0px;
+    border-radius: 0;
     padding-bottom: 0px;
-    // height: 34px;
+  }
+
+  .ant-menu-item {
+    border-radius: 0;
+  }
+  .ant-menu-item.ant-menu-item-selected {
+    color: rgb(255, 255, 255);
+    background: #0d1214;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #6772e5;
+      height: 100%;
+      width: 2px;
+      left: 0;
+    }
   }
 }

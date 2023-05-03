@@ -10,3 +10,54 @@
   width: 100%;
   height: calc(100vh - 64px);
 }
+
+// navbar-data
+
+.navbar-data {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .logo {
+      display: flex;
+      background-color: #555abf;
+      justify-content: center;
+      width: 233px;
+      align-items: center;
+    }
+
+    .sidebar-toggle {
+      display: flex;
+      align-items: center;
+
+      .icon-menu {
+        color: white;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// profile-sec
+
+.profile-sec {
+  .ant-btn {
+    height: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:focus {
+      background: transparent;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { items } from "./SiderDatab";
 ///styles
 import "./styles.scss";
 const SiderBar = () => {
-  const [current, setCurrent] = useState("mail");
+  const [current, setCurrent] = useState("dashboard");
   const onClick = (e) => {
     console.log("click ", e);
     setCurrent(e.key);

@@ -15,11 +15,12 @@ import { BiBox } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { FaRegComment } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const items = [
   {
-    label: "Dashboard",
-    key: "mail",
+    label: <Link to="/">Dashboard</Link>,
+    key: "dashboard",
     icon: <AiOutlineDashboard />,
   },
   {
@@ -29,12 +30,12 @@ export const items = [
     children: [
       {
         label: "add movies",
-        key: "mail",
+        key: "addMovies",
         icon: <MdOutlineAdd />,
       },
       {
         label: "all movies",
-        key: "allmovies",
+        key: "allMovies",
         icon: <AiOutlineUnorderedList />,
       },
     ],
@@ -46,12 +47,12 @@ export const items = [
     children: [
       {
         label: "add tv series",
-        key: "mail",
+        key: "addTvSeries",
         icon: <MdOutlineAdd />,
       },
       {
         label: "all tv series",
-        key: "allmovies",
+        key: "allTvSeries",
         icon: <AiOutlineUnorderedList />,
       },
     ],
@@ -63,7 +64,7 @@ export const items = [
     children: [
       {
         label: "add tv channels",
-        key: "mail",
+        key: "addChannels",
         icon: <MdOutlineAdd />,
       },
       {
