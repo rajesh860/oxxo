@@ -1,63 +1,35 @@
+@import "../styles/variables/colors";
+
+// app-layout-main
+
+.app-layout-main {
+  height: 100vh;
+}
+
+// app-layout-header
+
+.app-layout-header {
+  padding: 0;
+  background-color: #6772e5;
+}
+
+// App-Sidebar
+
 .sider-bar {
   background-color: #222d32 !important;
-  flex: none !important;
-  max-width: 250px !important;
-  min-width: 250px !important;
+  max-width: 250px;
   height: calc(100vh - 64px);
   overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
-.content-layout {
+
+// app-layout-content
+
+.app-layout-content {
   width: 100%;
   height: calc(100vh - 64px);
-}
-
-// navbar-data
-
-.navbar-data {
-  display: flex;
-  justify-content: space-between;
-
-  .left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    .logo {
-      display: flex;
-      background-color: #555abf;
-      justify-content: center;
-      width: 233px;
-      align-items: center;
-    }
-
-    .sidebar-toggle {
-      display: flex;
-      align-items: center;
-
-      .icon-menu {
-        color: white;
-        font-size: 30px;
-      }
-    }
-  }
-}
-
-// profile-sec
-
-.profile-sec {
-  .ant-btn {
-    height: 100%;
-    padding: 0;
-    border: none;
-    outline: none;
-    background: transparent;
-
-    &:hover {
-      background: transparent;
-    }
-
-    &:focus {
-      background: transparent;
-    }
-  }
+  overflow-y: scroll;
 }

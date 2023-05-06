@@ -1,6 +1,10 @@
-import { createBrowserRouter, Link } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "./common/MainLayout";
 import Dashboard from "./pages/dashboard";
+import AddMovies from "./pages/movies/addMovies";
+import AllMovies from "./pages/movies/allMovies";
+
+
 
 
 export const router = createBrowserRouter([
@@ -13,8 +17,12 @@ export const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/about",
-        element: <Link to="about">About Us</Link>,
+        path: "/add-movies",
+        element: <AddMovies />,
+      },
+      {
+        path: "/all-movies",
+        element: <AllMovies />,
       },
     ],
   },

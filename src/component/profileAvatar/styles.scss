@@ -1,0 +1,19 @@
+// profile-sec
+
+.profile-sec {
+  .ant-btn {
+    height: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:focus {
+      background: transparent;
+    }
+  }
+}

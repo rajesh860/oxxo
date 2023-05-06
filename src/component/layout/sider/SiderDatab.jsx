@@ -24,17 +24,17 @@ export const items = [
     icon: <AiOutlineDashboard />,
   },
   {
-    label: <NavLink to="/">movies</NavLink>,
+    label: "movies",
     key: "movies",
     icon: <HiOutlineVideoCamera />,
     children: [
       {
-        label: <NavLink to="/">add movies</NavLink>,
+        label: <NavLink to="/add-movies">add movies</NavLink>,
         key: "addMovies",
         icon: <MdOutlineAdd />,
       },
       {
-        label: <NavLink to="/">all movies</NavLink>,
+        label: <NavLink to="/all-movies">all movies</NavLink>,
         key: "allMovies",
         icon: <AiOutlineUnorderedList />,
       },

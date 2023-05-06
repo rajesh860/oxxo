@@ -1,17 +1,15 @@
 // Styles
 import { Col, Row, Table } from "antd"
-import PageHeader from "../../common/pageHeader"
-
 
 import { columns, data, widgetCards } from "./data"
 import WidgetCard from "../../component/widgetCard"
 
 import "./styles.scss"
+import LayoutContent from "../../common/layoutContent"
 
 const Dashboard = () => {
     return (
-        <div>
-            <PageHeader title={`Admin Dashboard`} />
+        <LayoutContent title="Admin Dashboard">
 
             <div className="dashboard-content">
                 <Row>
@@ -19,12 +17,11 @@ const Dashboard = () => {
                         <Row gutter={[30, 50]}>
                             {widgetCards?.map((curElm, i) => {
                                 return (
-                                    <Col lg={6} md={8} sm={12} xs={24} key={i}>
+                                    <Col xl={6} lg={8} md={12} sm={24} xs={24} key={i}>
                                         <WidgetCard data={curElm} />
                                     </Col>
                                 )
                             })}
-
                         </Row>
                     </Col>
                 </Row>
@@ -34,41 +31,26 @@ const Dashboard = () => {
 
                     <Row gutter={[0, 30]}>
                         <Col lg={24}>
-                            <Row gutter={[30, 0]}>
-                                <Col lg={12}>
-                                    <h3 className="heading">MOST POPULAR MOVIES</h3>
-                                    <Table columns={columns} dataSource={data} />
-                                </Col>
+                            <Row gutter={[30, 35]}>
 
-                                <Col lg={12}>
-                                    <h3 className="heading">TOP RATED MOVIES</h3>
-                                    <Table columns={columns} dataSource={data} />
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col lg={24}>
-                            <Row gutter={[30, 0]}>
-                                <Col lg={12}>
-                                    <h3 className="heading">TOP VIEW TODAY</h3>
-                                    <Table columns={columns} dataSource={data} />
-                                </Col>
-                                <Col lg={12}>
-                                    <h3 className="heading">RECENT SUBSCRIBER</h3>
-                                    <Table columns={columns} dataSource={data} />
-                                </Col>
+                                {
+                                    [1, 2, 3, 4].map((curElm, i) => {
+                                        return (
+                                            <Col lg={12} key={i + curElm}>
+                                                <h3 className="heading">MOST POPULAR MOVIES</h3>
+                                                <Table columns={columns} dataSource={data} />
+                                            </Col>
+                                        )
+                                    })
+                                }
                             </Row>
                         </Col>
                     </Row>
                 </div>
             </div>
 
-            <div className="dashboard-footer">
-                <p>
-                    2023 © <a href="">OxOO - v1.3.9.c</a>  |
-                    Developed by: <a href="">SpaGreen Creative</a>
-                </p>
-            </div>
-        </div>
+
+        </LayoutContent>
     )
 }
 

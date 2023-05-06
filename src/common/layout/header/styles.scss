@@ -1,0 +1,29 @@
+.navbar-data {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .logo {
+      display: flex;
+      background-color: #555abf;
+      justify-content: center;
+      width: 233px;
+      align-items: center;
+    }
+
+    .sidebar-toggle {
+      display: flex;
+      align-items: center;
+
+      .icon-menu {
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
