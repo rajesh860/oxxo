@@ -2,11 +2,12 @@ import { createBrowserRouter, Link } from "react-router-dom";
 import MainLayout from "./common/MainLayout";
 import Dashboard from "./pages/dashboard";
 
+
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <MainLayout />,
-    Children: [
+    children: [
       {
         path: "/",
         element: <Dashboard />,

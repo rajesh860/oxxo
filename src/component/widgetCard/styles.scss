@@ -1,0 +1,78 @@
+.widget-card.primary {
+  background-color: #6772e5;
+}
+
+.widget-card.info {
+  background-color: #17a2b8;
+}
+
+.widget-card.warning {
+  background-color: #ffc107;
+}
+
+.widget-card.danger {
+  background-color: #dc3545;
+}
+
+.widget-card.changeBg {
+  background-color: #fff;
+  color: #2a2a2a;
+
+  .icon.primary {
+    background-color: #6772e5;
+    color: #fff;
+  }
+
+  .icon.info {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+
+  .icon.warning {
+    background-color: #ffc107;
+    color: #fff;
+  }
+
+  .icon.danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+}
+
+.widget-card {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  cursor: pointer;
+
+  .icon-video {
+    display: flex;
+    min-width: 85px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px 0 0 4px;
+    font-size: 2.5rem;
+  }
+
+  .info {
+    h4 {
+      margin: 0;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: bolder;
+      margin: 0;
+    }
+  }
+}

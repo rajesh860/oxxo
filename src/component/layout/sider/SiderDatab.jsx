@@ -15,162 +15,162 @@ import { BiBox } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { FaRegComment } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const items = [
   {
-    label: <Link to="/">Dashboard</Link>,
+    label: <NavLink to="/">dashboard</NavLink>,
     key: "dashboard",
     icon: <AiOutlineDashboard />,
   },
   {
-    label: "movies",
+    label: <NavLink to="/">movies</NavLink>,
     key: "movies",
     icon: <HiOutlineVideoCamera />,
     children: [
       {
-        label: "add movies",
+        label: <NavLink to="/">add movies</NavLink>,
         key: "addMovies",
         icon: <MdOutlineAdd />,
       },
       {
-        label: "all movies",
+        label: <NavLink to="/">all movies</NavLink>,
         key: "allMovies",
         icon: <AiOutlineUnorderedList />,
       },
     ],
   },
   {
-    label: "tv series",
+    label: <NavLink to="/">tv series</NavLink>,
     key: "series",
     icon: <TbMovie />,
     children: [
       {
-        label: "add tv series",
+        label: <NavLink to="/">add tv series</NavLink>,
         key: "addTvSeries",
         icon: <MdOutlineAdd />,
       },
       {
-        label: "all tv series",
+        label: <NavLink to="/">all tv series</NavLink>,
         key: "allTvSeries",
         icon: <AiOutlineUnorderedList />,
       },
     ],
   },
   {
-    label: "tv channels",
+    label: <NavLink to="/">tv channels</NavLink>,
     key: "channels",
     icon: <TbMovie />,
     children: [
       {
-        label: "add tv channels",
+        label: <NavLink to="/">add tv channels</NavLink>,
         key: "addChannels",
         icon: <MdOutlineAdd />,
       },
       {
-        label: "all tv channels",
-        key: "channels",
+        label: <NavLink to="/">all tv channels</NavLink>,
+        key: "allTvChannels",
         icon: <AiOutlineUnorderedList />,
       },
       {
-        label: "programe guide",
+        label: <NavLink to="/">program guide</NavLink>,
         key: "guide",
         icon: <AiOutlineClockCircle />,
       },
       {
-        label: "category",
+        label: <NavLink to="/">category</NavLink>,
         key: "category",
         icon: <BsTag />,
       },
     ],
   },
   {
-    label: "search & import",
+    label: <NavLink to="/">search & import</NavLink>,
     key: "import",
     icon: <CiSearch />,
   },
   {
-    label: "MOVIE SCRAPPER",
-    key: "MOVIESCRAPPER",
+    label: <NavLink to="/">movie scrapper</NavLink>,
+    key: "movieScrapper",
     icon: <FiCopy />,
   },
   {
-    label: "country",
+    label: <NavLink to="/">country</NavLink>,
     key: "country",
     icon: <ImEarth />,
   },
   {
-    label: "genre",
+    label: <NavLink to="/">genre</NavLink>,
     key: "genre",
     icon: <BiBox />,
   },
   {
-    label: "slider",
+    label: <NavLink to="/">slider</NavLink>,
     key: "slider",
     icon: <BsStackOverflow />,
     children: [
       {
-        label: "iamge slider",
-        key: "slider",
+        label: <NavLink to="/">image slider</NavLink>,
+        key: "imageSlider",
         icon: <BsStackOverflow />,
       },
       {
-        label: "slider setting",
+        label: <NavLink to="/">slider setting</NavLink>,
         key: "setting",
         icon: <MdOutlineSettingsSuggest />,
       },
     ],
   },
   {
-    label: "comments",
+    label: <NavLink to="/">comments</NavLink>,
     key: "comments",
     icon: <FaRegComment />,
     children: [
       {
-        label: "comments",
-        key: "commentss",
+        label: <NavLink to="/">comments</NavLink>,
+        key: "comments",
         icon: <FaRegComment />,
       },
       {
-        label: "comments setting",
-        key: "commentssetting",
+        label: <NavLink to="/">comments setting</NavLink>,
+        key: "commentsSetting",
         icon: <MdOutlineSettingsSuggest />,
       },
     ],
   },
   {
-    label: "actor & director",
+    label: <NavLink to="/">actor & director</NavLink>,
     key: "actor&director",
     icon: <HiOutlineUserGroup />,
   },
   {
-    label: "user",
+    label: <NavLink to="/">user</NavLink>,
     key: "user",
     icon: <FiUser />,
   },
   {
-    label: "movie request",
+    label: <NavLink to="/">movie request</NavLink>,
     key: "request",
     icon: <TbBrandTelegram />,
   },
   {
-    label: "report",
+    label: <NavLink to="/">report</NavLink>,
     key: "report",
     icon: <FiFlag />,
   },
   {
-    label: "setting",
+    label: <NavLink to="/">setting</NavLink>,
     key: "setting",
     icon: <MdOutlineSettingsSuggest />,
     children: [
       {
-        label: "system setting",
-        key: "systemsetting",
+        label: <NavLink to="/">system setting</NavLink>,
+        key: "systemSetting",
         icon: <MdOutlineSettingsSuggest />,
       },
       {
-        label: "android setting",
-        key: "androidSettin",
+        label: <NavLink to="/">android setting</NavLink>,
+        key: "androidSetting",
         icon: <AiFillAndroid />,
       },
     ],

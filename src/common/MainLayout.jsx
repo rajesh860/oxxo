@@ -98,21 +98,11 @@ const MainLayout = () => {
             <SiderBar />
           </Sider>
 
-          <Content
-            style={{
-              margin: "0 16px",
-            }}
-          >
+          <Content>
             <Outlet />
           </Content>
+
         </Layout>
-        {/* <Footer
-          style={{
-            textAlign: "center",
-          }}
-        >
-          Ant Design ©2023 Created by Ant UED
-        </Footer> */}
       </Layout>
     </div>
   );

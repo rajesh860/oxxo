@@ -1,8 +1,10 @@
 
+import "./styles.scss"
+
 const PageHeader = ({ title }) => {
 
     return (
-        <div className="page-header">{title}</div>
+        <div className="page-header"><h1>{title}</h1></div>
     )
 }
 
