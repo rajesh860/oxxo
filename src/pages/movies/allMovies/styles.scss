@@ -1,0 +1,79 @@
+@import "../../../styles/variables/colors";
+
+// all-movies-container
+
+.all-movies-container {
+  padding: 30px;
+}
+
+// all-movie-content
+
+.all-movie-content {
+  background-color: #ffffff;
+
+  .filter-header {
+    padding: 20px;
+
+    .left {
+      .icon-plus {
+        font-size: 16px;
+      }
+
+      .icon-search {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// all-movie-table
+
+.all-movie-table {
+  .ant-pagination {
+    .ant-pagination-item-active {
+      border-color: $theme-primary;
+      border-width: 2px;
+      color: $theme-primary;
+
+      a {
+        color: $theme-primary;
+      }
+    }
+  }
+
+  .ant-table-thead {
+    .ant-table-cell {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .ant-table-tbody {
+    .ant-table-cell {
+      vertical-align: top;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      &:nth-child(1) {
+        font-weight: 500;
+      }
+      &:nth-child(4) {
+        font-weight: 500;
+      }
+
+      .ant-image {
+        width: 100px;
+      }
+
+      .ant-btn {
+        display: flex;
+        align-items: center;
+        display: inline-block;
+      }
+    }
+
+    .ant-table-cell-row-hover {
+      background: #f2f2f2;
+    }
+  }
+}

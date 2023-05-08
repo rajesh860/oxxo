@@ -1,6 +1,48 @@
+@import "../styles/variables/colors";
+
 /* global-scss */
 
 a {
   text-decoration: none;
   color: white;
+}
+
+// Required-Icon-remove
+
+.ant-form-item-required {
+  &::before {
+    display: none !important;
+  }
+}
+
+// Switch
+.ant-switch.ant-switch-checked {
+  background: $theme-primary;
+}
+
+.import-movies-header {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+// /Icons
+
+.icon {
+  color: white;
+  font-size: 20px;
+}
+
+.ant-popover {
+  .action-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    li {
+      list-style: none;
+      a {
+        color: black;
+      }
+    }
+  }
 }

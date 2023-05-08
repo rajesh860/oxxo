@@ -1,0 +1,36 @@
+@import "../../../styles/variables/colors";
+
+.input-box {
+  .ant-form-item {
+    .ant-form-item-label {
+      padding: 0;
+
+      label {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    .ant-input {
+      height: 33px;
+      display: block;
+      width: 100%;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      background-color: #fff;
+      background-clip: padding-box;
+      border-radius: 4px;
+
+      &:hover {
+        border-color: $theme-primary;
+        border-width: 2px;
+      }
+
+      &:focus {
+        border-color: $theme-primary;
+        border-width: 2px;
+        box-shadow: none;
+      }
+    }
+  }
+}

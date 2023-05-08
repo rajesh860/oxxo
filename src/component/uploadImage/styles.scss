@@ -1,0 +1,54 @@
+.input-box {
+  // /img-container
+
+  .img-container {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 150px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .img-container.poster {
+    max-width: 350px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+
+  .img-upload {
+    .ant-btn {
+      color: #fff;
+      background-color: #6c757d;
+      border: none;
+      outline: none;
+      height: 37px;
+      font-weight: 500;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+
+    .ant-btn {
+      border: none;
+      outline: none;
+      display: flex;
+      align-items: center;
+      box-shadow: none;
+      gap: 5px;
+      color: black;
+      font-size: 16px;
+    }
+  }
+}
